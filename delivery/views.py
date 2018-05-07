@@ -18,5 +18,17 @@ def home_old(request):
 	return HttpResponse(html_) 
 
 def home(request):
-	rand = random.randint(0, 1000)
-	return render(request, 'base.html', {"html_var": "context", "num": rand}) #response, with context
+	num = None
+	some_list = [
+		random.randint(0, 1000),
+		random.randint(0, 1000),
+		random.randint(0, 1000)
+	]
+	condition_bool_item = True
+	if condition_bool_item:
+		num = random.randint(0, 1000)
+	context = {
+		"num": num,
+		"some_list": some_list
+	}
+	return render(request, 'base.html', context) #response, with context
