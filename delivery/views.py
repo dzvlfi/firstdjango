@@ -29,6 +29,17 @@ def home(request):
 		num = random.randint(0, 1000)
 	context = {
 		"num": num,
-		"some_list": some_list
+		"some_list": some_list,
+		"html_var": "hai,"
 	}
-	return render(request, 'base.html', context) #response, with context
+	return render(request, 'home.html', context) #response, with context
+
+def about(request):
+	context = {
+	}
+	return render(request, 'about.html', context) #response, with context
+
+def contact(request):
+	context = {
+	}
+	return render(request, 'contact.html', context) #response, with context

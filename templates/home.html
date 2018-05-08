@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block headl_title %}{{ block.super }}{% endblock %}
+
+
+{% block content %}
+<h2>Hello World!</h2>
+<p>
+	<code>{% verbatim %}{{ html_var }}{% endverbatim %}}</code>{{ html_var }} di bandung, dingin euy hehe
+</p>
+<p>
+	{% if num is not None %}
+	angka acak {{ num }}
+	{% endif %}
+</p>
+<p>
+	{% for some_item in some_list %}
+		{% if some_item|divisibleby:"2" %}
+			Even number
+		{% endif %}
+
+		{{ some_item }}<br/>
+	{% endfor %}
+</p>
+<p>Some item is {{ some_item }}</p>
+{% endblock %}
