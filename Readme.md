@@ -1,4 +1,6 @@
-# FIRSTDJANGO
+# FirstDjango
 
-Before you can use Django, you’ll need to get it installed. We have a complete installation guide that covers all the possibilities; this guide will guide you to a simple, minimal installation that’ll work while you walk through the introduction.
-ref: ``https://docs.djangoproject.com/en/2.2/intro/install/``
+The main reason we are using web applications in the first place is to implement Django’s code reusability feature.
+This enables us to not only migrate the pre-built apps in our project but also customize web applications made by us.
+All the commands are given in our root directory or in the directory where we have the manage.py file.
+Once we have created our application, even though it’s in the same folder as the main Django project, the application needs to be installed. To install the Django application in the project we will first open settings.py and modify it.
